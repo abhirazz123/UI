@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #a4b69e;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        fieldset {
+            border: 2px solid #007BFF;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #007BFF;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <fieldset>
+        <legend>Login</legend>
+        <form action="https://www.google.com" method="post">
+            <label for="login_username">Username:</label>
+            <input type="text" name="username" id="login_username">
+            
+            <label for="login_password">Password:</label>
+            <input type="password" name="password" id="login_password">
+            
+            <input type="submit" value="Login">
+        </form>
+    </fieldset>
+
+    <h1>Student Signup Form</h1>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <form action="">
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" id="first_name">
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" name="last_name" id="last_name">
+
+            <label for="signup_password">Password:</label>
+            <input type="password" name="password" id="signup_password">
+
+            <label for="signup_confirm_password">Confirm Password:</label>
+            <input type="password" name="confirm_password" id="signup_confirm_password">
+
+            <label for="Gender">Gender</label>
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="Female">
+            <label for="female">Female</label>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone">
+
+            <fieldset>
+                <legend>Account Setup</legend>
+                <label for="signup_username">Username:</label>
+                <input type="text" name="username" id="signup_username">
+
+                <label for="signup_password2">Password:</label>
+                <input type="password" name="password" id="signup_password2">
+
+                <label for="signup_confirm_password2">Confirm Password:</label>
+                <input type="password" name="confirm_password" id="signup_confirm_password2">
+            </fieldset>
+
+            <input type="submit" value="Signup">
+        </form>
+    </fieldset>
+    
+</body>
+</html>
