@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gradient1{
+            background: linear-gradient(red, yellow, blue);
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        
+        .gradient2 {
+            background: linear-gradient(red, yellow, green, blue, purple, orange, pink);
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        .gradient3 {
+            background: linear-gradient(to right, red 10%, yellow 30%, blue 60%);
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        .radial-gradient {
+            background: radial-gradient(circle , red , yellow , green );
+            height: 100px;
+            width:100px;
+            margin-bottom: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Linear Gradients - Multiple Color Stops</h1>
+    <p><strong>Note:</strong> Color stops are spaced evenly when no percentages are specified.</p>
+    <h1>3 Color Stops (evenly spaced):</h1>
+    <div class="gradient1"></div>
+    <h1>7 Color Stops (evenly spaced):</h1>
+    <div class="gradient2"></div>
+    <h1>3 Color Stops (not evenly spaced):</h1>
+    <div class="gradient3"></div>
+    <h1>Radial Gradient - Not Evenly Spaced Color Stops</h1>
+    <div class="radial-gradient"></div>
+</body>
+</html>
