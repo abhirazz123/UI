@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <style>
+        body {
+            
+            font-size: 100%;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-attachment: fixed;
+           
+           
+        }
+        .container {
+            
+            background-color: antiquewhite;
+            text-align: center;
+            max-width: 400px;
+            margin: 0 auto;
+            box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+            box-shadow: rgb(1, 12, 31);
+            
+        }
+        input, button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            box-sizing: border-box;
+            
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+<body>
+    <div class="container">
+        <fieldset>
+        <h1>Mark Report</h1>
+        <input type="text" id="rollNo" placeholder="Enter Roll Number">
+        <input type="text" id="name" placeholder="Enter Name">
+        <input type="number" id="htmlMarks" placeholder="Enter HTML marks out of 100">
+        <input type="number" id="cssMarks" placeholder="Enter CSS marks out of 100">
+        <input type="number" id="jsMarks" placeholder="Enter JavaScript marks out of 100">
+        <input type="number" id="bootstrapMarks" placeholder="Enter Bootstrap marks out of 100">
+        <button onclick="calculateGrade()">Get result </button>
+        <div class="result" id="result"></div>
+    </fieldset>
+    </div>
+
+    <script>
+        function calculateGrade() {
+            const rollNo = document.getElementById('rollNo').value;
+            const name = document.getElementById('name').value;
+            const htmlMarks = parseInt(document.getElementById('htmlMarks').value);
+            const cssMarks = parseInt(document.getElementById('cssMarks').value);
+            const jsMarks = parseInt(document.getElementById('jsMarks').value);
+            const bootstrapMarks = parseInt(document.getElementById('bootstrapMarks').value);
+
+            const totalMarks = htmlMarks + cssMarks + jsMarks + bootstrapMarks;
+            const averageMarks = totalMarks / 4;
+            let grade;
+
+            if (averageMarks >= 90) {
+                grade = 'A+';
+            } else if (averageMarks >= 80) {
+                grade = 'B+';
+            } else if (averageMarks >= 70) {
+                grade = 'C+';
+            } else if (averageMarks >= 60) {
+                grade = 'D+';
+            } else {
+                grade = 'FAIL';
+            }
+
+            document.getElementById('result').innerText = `Roll No: ${rollNo}\nName: ${name}\nYour grade is: ${grade}`;
+        }
+    </script>
+</body>
+</html>

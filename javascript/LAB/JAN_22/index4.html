@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="result"></div>
+    <script>
+        let number = 23;
+        let firstDigit = Math.floor(number / 10);
+        let lastDigit = number % 10;
+        let result = `Sum is: ${firstDigit + lastDigit} <br>`;
+        document.querySelector('.result').innerHTML = result;
+    </script>
+</body>
+</html>

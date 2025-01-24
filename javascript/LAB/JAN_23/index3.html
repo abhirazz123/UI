@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Number</title>
+</head>
+<body>
+    <script>
+        let a = 10, b = 200, c = 134;
+         let max = (a + b + Math.abs(a - b)) / 2;//10+200+190/2=200
+         max = (max + c + Math.abs(max - c)) / 2; //200+134+66/2=200
+        
+         document.write("MAX = " + max);
+
+      //  (a>b&&a>c)&&console.log("max="+a)||(b>a&&b>c)&&console.log("Max="+b)||console.log("max="+c);
+    </script>
+</body>
+</html>

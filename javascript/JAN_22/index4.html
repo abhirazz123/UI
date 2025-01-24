@@ -1,0 +1,26 @@
+<h3> Demo on while loop</h3>
+<script>
+    document.write("DAY");
+    document.write("<Select>");
+    for(let i = 1; i <= 31; i++){
+        document.write('<Option>' + i + '</Option>');
+    }
+    document.write("</Select>");
+    
+    document.write("MONTH");
+    
+    document.write("<Select>");
+        
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    for(let i = 0; i < months.length; i++){
+        document.write('<Option>' + months[i] + '</Option>');
+    }
+    document.write("</Select>");
+    
+    document.write("YEAR");
+    document.write("<Select>");
+    for(let i = 1900; i <= 2100; i++){
+        document.write('<Option>' + i + '</Option>');
+    }
+    document.write("</Select>");
+</script>

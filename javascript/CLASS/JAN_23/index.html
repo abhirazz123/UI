@@ -1,0 +1,14 @@
+<h3> Demo on Table creation Using loop</h3>
+<script>
+    document.write("<table border='1' cellspacing='0' cellpadding='5'>");
+    document.write("<tr><th>S.no</th><th>Name</th><th>Course</th><th>Phone No</th></tr>");
+    for (var i = 1; i <= 5; i++) {
+        document.write("<tr>");
+        document.write("<td>" + i + "</td>");
+        document.write("<td>Name " + i + "</td>");
+        document.write("<td>Course " + i + "</td>");
+        document.write("<td>Phone " + i + "</td>");
+        document.write("</tr>");
+    }
+    document.write("</table>");
+</script>

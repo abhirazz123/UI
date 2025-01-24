@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopkeeper Calculation</title>
+</head>
+<body>
+    <h1>Shopkeeper Calculation</h1>
+    <p id="output"></p>
+
+    <script>
+        
+        const costPrice = 3500;
+
+       
+        const profitPercentage = 27;
+ 
+        const vatPercentage = 12.7;
+
+         
+        const serviceChargePercentage = 3.87;
+
+         
+        const profit = (profitPercentage / 100) * costPrice;
+
+         
+        const sellingPrice = costPrice + profit;
+
+         
+        const vat = (vatPercentage / 100) * sellingPrice;
+
+        
+        const serviceCharge = (serviceChargePercentage / 100) * sellingPrice;
+
+        
+        const totalSellingPrice = sellingPrice + vat + serviceCharge;
+
+ 
+        document.getElementById("output").innerHTML = `
+            Selling Price: Rs. ${sellingPrice.toFixed(2)}<br>
+            Profit: Rs. ${profit.toFixed(2)}<br>
+            VAT: Rs. ${vat.toFixed(2)}<br>
+            Service Charge: Rs. ${serviceCharge.toFixed(2)}<br>
+            Total Selling Price: Rs. ${totalSellingPrice.toFixed(2)}
+        `;
+    </script>
+</body>
+</html>

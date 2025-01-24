@@ -1,0 +1,26 @@
+<!--
+Que 5 : Write a 'JavaScript' program to check whether a year is leap year or not.
+-------
+
+Sample input  : let year = 2020 || let year = 2000 || let year = 2004
+Sample output : leap year
+
+Sample input  : let year = 2001 || let year = 2006
+Sample output : not leap year
+-->
+<script>
+    let year = 1800;
+    if (year % 4 == 0) {
+        if (year % 100 == 0) {
+            if (year % 400 == 0) {
+                document.write("leap year");
+            } else {
+                document.write("not leap year");
+            }
+        } else {
+            document.write("leap year");
+        }
+    } else {
+        document.write("not leap year");
+    }
+</script>

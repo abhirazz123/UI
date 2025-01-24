@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-shadow: 3px 1px 1px #fff;
+            color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="student-info"></div>
+
+    <script>
+        const studentInfo = `
+            <p>Name = Rohit Sharma</p>
+            <p>Roll No = 1001</p>
+            <p>Branch = B. Tech</p>
+            <p>Address = Hyderabad</p>
+            <p>College Name = Naresh It</p>
+        `;
+        document.getElementById('student-info').innerHTML = studentInfo;
+    </script>
+
+    <script>
+        let a = 20;
+        let b = 10;
+        console.log(`Addition is : ${a + b}`);
+        console.log(`Subtraction is : ${a - b}`);
+        console.log(`Multiplication is : ${a * b}`);
+        console.log(`Division is : ${a / b}`);
+        console.log(`Modulation is : ${a % b}`);
+    </script>
+</body>
+</html>
