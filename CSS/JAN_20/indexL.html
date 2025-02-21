@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f9;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .form-container {
+            margin-top: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 400px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-container .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container .login {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .form-container .logout {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .form-container button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Help</a>
+        <a href="#">Contact</a>
+        <a href="#">Go to Login</a>
+        <a href="#">Sign Up</a>
+        <a href="#">Logout</a>
+    </nav>
+
+    <div class="form-container">
+        <h2>Sign-Up Form</h2>
+        <form>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="user-id">User ID:</label>
+            <input type="text" id="user-id" name="user-id" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="button-container">
+                <button type="submit" class="login">Login</button>
+                <button type="reset" class="logout">Logout</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
